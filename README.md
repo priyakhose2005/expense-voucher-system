@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Expense Voucher Management System
 
 A full-stack web app that digitizes ABC Company's expense voucher workflow: employees create and submit vouchers, the Director approves or rejects them, and the Accounts Team monitors everything for reimbursement.
@@ -155,3 +156,6 @@ All routes except `/auth/login` require `Authorization: Bearer <token>`.
 - **Employee:** Dashboard, Create Voucher, My Vouchers, Voucher Details, Edit Draft Voucher
 - **Director:** Dashboard, Pending Approvals, All Vouchers, Voucher Details (approve/reject)
 - **Accounts:** Dashboard, All Vouchers (read-only), Voucher Details
+=======
+# expense-voucher-system
+>>>>>>> d554696e6dd3237998475d05058d22e92100b60f
