@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F8FAFC;
+  --color-paper-line: #E2E8F0;
+  --color-ink: #0F172A;
+  --color-ink-soft: #475569;
+  --color-navy: #0F172A;
+  --color-navy-deep: #020617;
+  --color-ledger: #16A34A;
+  --color-ledger-soft: #DCFCE7;
+  --color-rust: #EA580C;
+  --color-rust-soft: #FDE8D0;
+  --color-gold: #22C55E;
+  --color-gold-soft: #ECFDF5;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 24%),
+              radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.12), transparent 20%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.login-bg {
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.35), transparent 24%),
+              radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.2), transparent 22%),
+              linear-gradient(135deg, #1E40AF, #2563EB 35%, #0F172A 100%);
+}
+
+.dashboard-shell {
+  background-color: #F8FAFC;
+}
+
+.dashboard-main {
+  min-height: 100vh;
+}
+
+.card-surface {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.logout-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.55);
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+.logout-modal {
+  width: min(100%, 28rem);
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.16);
+  border: 1px solid rgba(203, 213, 225, 0.6);
+  padding: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

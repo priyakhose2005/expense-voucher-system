@@ -1,0 +1,11 @@
+# React frontend
+frontend/node_modules/
+frontend/.env
+frontend/build/
+
+# Node backend
+backend/node_modules/
+backend/.env
+
+# Logs
+*.log
